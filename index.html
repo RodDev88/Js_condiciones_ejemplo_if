@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Condiciones: ejemplo if</title>
+    <style>
+      body {
+        background-color: #f0f0f5;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column;
+      }
+
+      input {
+        width: 20%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      button {
+        width: 20%;
+        padding: 10px;
+        background-color: #5a9bf6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #478bd1;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ejemplo condicional if</h1>
+    <input id="input" type="text" placeholder="Ingresa el password" />
+    <button
+      onclick="
+    value = document.querySelector('#input').value
+    if (value == 'password-secreto') {
+        parrafo = document.querySelector('#secret-result')
+        parrafo.innerHTML = 'Wena, lo lograste'
+    }
+
+    "
+    >
+      Verificar
+    </button>
+    <p id="secret-result"></p>
+  </body>
+</html>
